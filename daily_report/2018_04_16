@@ -11,3 +11,11 @@ https://blog.csdn.net/shenziheng1/article/details/72821001
 http://www.sohu.com/a/120988112_465975
 手把手教你用GAN实现半监督学习
 https://blog.csdn.net/qq_25737169/article/details/78532719
+
+2018_04_18
+1.了解GANs一些原理性基础，发现离用来做mask RCNN的训练集还是有点远，还是继续用回上周的labelme进行制作训练数据
+2.制作labelme数据后，还需要将其转换为coco数据集的格式，目前已经知道具体过程:
+  首先,需要将labelme标注的数据生成mask
+  https://blog.csdn.net/wc781708249/article/details/79595174
+  然后，将其根据下面链接转换为coco数据集
+  https://patrickwasp.com/create-your-own-coco-style-dataset/
