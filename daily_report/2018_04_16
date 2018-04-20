@@ -19,3 +19,7 @@ https://blog.csdn.net/qq_25737169/article/details/78532719
   https://blog.csdn.net/wc781708249/article/details/79595174
   然后，将其根据下面链接转换为coco数据集
   https://patrickwasp.com/create-your-own-coco-style-dataset/
+
+
+2018_04_20
+1.制作了4张训练图和一张验证图，去fine tune 预训练模型，迭代10个epoch,但没效果，下周需要进行调参。
