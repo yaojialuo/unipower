@@ -34,5 +34,7 @@ pip install labelme
 2.运行labelme 进行对图像的标注。
 3.用脚本将标注转换为jason，参考
 https://blog.csdn.net/wc781708249/article/details/79595174
+下载群文件labelme.7z
 4.制作对应的coco数据集，参考
 https://patrickwasp.com/create-your-own-coco-style-dataset/
+下载群文件pycococreator.7z
