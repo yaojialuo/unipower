@@ -1,12 +1,12 @@
 一、跑通demo.py
-主要原理说明及安装方法参考,https://blog.csdn.net/u011974639/article/details/78483779?locationNum=9&fps=1 
-tensorflow1.4.0 gpu版可用群上的cuda和cudnn。
-环境：Python3.5+tensorflow1.4.0+keras 2.0.8
-安装好相关包后，把群里pycocotools.7z解压后文件夹copy到Anaconda3\envs\你的环境名\Lib\site-packages下，把群里demo.py 
+1.主要原理说明及安装方法参考,https://blog.csdn.net/u011974639/article/details/78483779?locationNum=9&fps=1 
+2.tensorflow1.4.0 gpu版可用群上的cuda和cudnn。
+3.环境：Python3.5+tensorflow1.4.0+keras 2.0.8
+4.安装好相关包后，把群里pycocotools.7z解压后文件夹copy到Anaconda3\envs\你的环境名\Lib\site-packages下，把群里demo.py 
 copy到Mask_RCNN-master\samples目录下即可运行。
 
 二、跑通trainshapes.py
-跑训练模型前在model.py ，将workers赋值为1，use_multiprocessing赋值为2
+1.跑训练模型前在model.py ，将workers赋值为1，use_multiprocessing赋值为2
 self.keras_model.fit_generator(
             train_generator,
             initial_epoch=self.epoch,
@@ -21,3 +21,16 @@ self.keras_model.fit_generator(
         )
         
 三、制作自己的数据集并finetune模型
+1.安装labelme ,参考
+https://github.com/wkentaro/labelme
+# python3
+conda create --name=labelme python=3.6
+source activate labelme
+# conda install -c conda-forge pyside2
+# conda install pyqt
+pip install pyqt5  # pyqt5 can be installed via pip on python3
+pip install labelme
+
+2.用labelme 进行对图像的标注。
+3.用脚本将标注转换为jason
+4.制作对应的coco数据集
